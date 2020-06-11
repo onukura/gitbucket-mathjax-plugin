@@ -16,7 +16,7 @@ project/project/
 .settings
 
 # IntelliJ specific
-/.idea/
+/.idea
 .idea_modules/
 
 # Ensime
