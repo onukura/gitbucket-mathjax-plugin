@@ -1,0 +1,1 @@
+# gitbucket-mathjax-plugin
