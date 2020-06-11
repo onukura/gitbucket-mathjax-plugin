@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: com.mchange:mchange-commons-java:0.2.11:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.mchange/mchange-commons-java/jars/mchange-commons-java-0.2.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.mchange/mchange-commons-java/srcs/mchange-commons-java-0.2.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

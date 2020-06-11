@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: org.cache2k:cache2k-api:1.2.0.Final:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.cache2k/cache2k-api/jars/cache2k-api-1.2.0.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.cache2k/cache2k-api/srcs/cache2k-api-1.2.0.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

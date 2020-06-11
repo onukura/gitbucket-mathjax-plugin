@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: org.eclipse.jgit:org.eclipse.jgit.archive:5.2.0.201812061821-r:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.archive/jars/org.eclipse.jgit.archive-5.2.0.201812061821-r.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.archive/srcs/org.eclipse.jgit.archive-5.2.0.201812061821-r-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

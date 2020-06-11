@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: is.tagomor.woothee:woothee-java:1.8.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/is.tagomor.woothee/woothee-java/jars/woothee-java-1.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/is.tagomor.woothee/woothee-java/srcs/woothee-java-1.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

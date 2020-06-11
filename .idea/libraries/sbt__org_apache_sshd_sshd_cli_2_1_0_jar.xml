@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: org.apache.sshd:sshd-cli:2.1.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.sshd/sshd-cli/jars/sshd-cli-2.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.sshd/sshd-cli/srcs/sshd-cli-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
