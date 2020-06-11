@@ -6,7 +6,7 @@ A GitBucket plugin for rendering Markdown file with MathJax.
 
 ## Screenshot
 
-![screenshot](https://github.com/onukura/gitbcket-mathjax-plugin/blob/assets/screenshot.png?raw=true)
+![screenshot](https://github.com/onukura/gitbucket-mathjax-plugin/blob/assets/screenshot.png?raw=true)
 
 
 ## Install
