@@ -12,6 +12,7 @@ class Plugin extends gitbucket.core.plugin.Plugin {
   override val description: String = "Rendering Markdown files with mathjax."
   override val versions: List[Version] = List(
     new Version("1.0.0"),
+    new Version("1.0.1"),
   )
 
   override val assetsMappings = Seq("/mathjax" -> "/mathjax/assets")
