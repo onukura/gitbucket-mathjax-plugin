@@ -21,16 +21,10 @@ class MathjaxRenderer extends Renderer {
               enableRefsLink: Boolean,
               enableAnchor: Boolean)(implicit context: Context): String = {
 
+    val path = context.baseUrl
     val rendered = markdown(fileContent, repository, branch, enableWikiLink, enableRefsLink, enableLineBreaks = true)
-    val delim = "$"
 
-    s"""<script>
-       MathJax = {
-         tex: {
-           inlineMath: [['$delim', '$delim'], ['\\(', '\\)']]
-         }
-       };
-       </script>
+    s"""<script src="$path/plugin-assets/mathjax/mathjax-config.js"></script>
        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
        <script type="text/javascript" id="MathJax-script" async
          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">

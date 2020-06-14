@@ -14,6 +14,8 @@ class Plugin extends gitbucket.core.plugin.Plugin {
     new Version("1.0.0"),
   )
 
+  override val assetsMappings = Seq("/mathjax" -> "/mathjax/assets")
+
   private[this] var renderer: Option[MathjaxRenderer] = None
 
   override def initialize(registry: PluginRegistry, context: ServletContext, settings: SystemSettingsService.SystemSettings): Unit = {
