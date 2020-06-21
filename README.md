@@ -32,6 +32,10 @@ This makes the assembly package
 `target/scala-2.13/gitbucket-mathjax-plugin-{plugin-version}.jar`
 for deployment.
 
+## Note
+
+MathJax and Markdown syntax would conflict in some cases. You need to modify your `.md` file a little bit to solve it. It mentioned at [issue](https://github.com/onukura/gitbucket-mathjax-plugin/issues/1). See also [MathJax Doc.](http://docs.mathjax.org/en/latest/input/tex/html.html?highlight=markdown#interactions-with-content-management-systems) for more details.
+
 ## Version
 
 Plugin version|GitBucket version
