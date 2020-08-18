@@ -9,26 +9,21 @@ class MathjaxRenderer extends Renderer {
 
   def render(request: RenderRequest): Html = {
     import request._
-    Html(toHtml(filePath, fileContent, branch, repository, enableWikiLink, enableRefsLink, enableAnchor)(context))
+    Html(toHtml(fileContent, branch, repository, enableWikiLink, enableRefsLink)(context))
   }
 
-  def toHtml(
-              filePath: List[String],
-              fileContent: String,
-              branch: String,
-              repository: RepositoryInfo,
-              enableWikiLink: Boolean,
-              enableRefsLink: Boolean,
-              enableAnchor: Boolean)(implicit context: Context): String = {
+  def toHtml(fileContent: String,
+             branch: String,
+             repository: RepositoryInfo,
+             enableWikiLink: Boolean,
+             enableRefsLink: Boolean)(implicit context: Context): String = {
 
     val path = context.baseUrl
     val rendered = markdown(fileContent, repository, branch, enableWikiLink, enableRefsLink, enableLineBreaks = true)
 
     s"""
        |<script src="$path/plugin-assets/mathjax/mathjax-config.js"></script>
-       |<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-       |<script type="text/javascript" id="MathJax-script" async
-       |src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+       |<script id="MathJax-script" async src="$path/plugin-assets/mathjax/v3.0.5/tex-chtml.js"></script>
        |$rendered
        |""".stripMargin
 
