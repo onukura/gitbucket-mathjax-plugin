@@ -9,17 +9,25 @@ class MathjaxRenderer extends Renderer {
 
   def render(request: RenderRequest): Html = {
     import request._
-    Html(toHtml(fileContent, branch, repository, enableWikiLink, enableRefsLink)(context))
+    Html(toHtml(fileContent, branch, repository)(context))
   }
 
   def toHtml(fileContent: String,
              branch: String,
-             repository: RepositoryInfo,
-             enableWikiLink: Boolean,
-             enableRefsLink: Boolean)(implicit context: Context): String = {
+             repository: RepositoryInfo)(implicit context: Context): String = {
 
     val path = context.baseUrl
-    val rendered = markdown(fileContent, repository, branch, enableWikiLink, enableRefsLink, enableLineBreaks = true)
+    val rendered = markdown(
+      markdown = fileContent,
+      repository = repository,
+      branch = branch,
+      enableWikiLink = false,
+      enableRefsLink = true,
+      enableAnchor = true,
+      enableLineBreaks = true,
+      enableTaskList = true,
+      hasWritePermission = true
+    )
 
     s"""
        |<script src="$path/plugin-assets/mathjax/mathjax-config.js"></script>

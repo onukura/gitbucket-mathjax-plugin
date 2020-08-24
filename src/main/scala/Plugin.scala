@@ -1,5 +1,5 @@
 import javax.servlet.ServletContext
-import gitbucket.core.plugin.{PluginRegistry}
+import gitbucket.core.plugin.PluginRegistry
 import gitbucket.core.service.SystemSettingsService
 import gitbucket.core.service.SystemSettingsService.SystemSettings
 import io.github.gitbucket.solidbase.model.Version
@@ -15,6 +15,7 @@ class Plugin extends gitbucket.core.plugin.Plugin {
     new Version("1.0.1"),
     new Version("1.0.2"),
     new Version("1.0.3"),
+    new Version("1.0.4")
   )
 
   override val assetsMappings = Seq("/mathjax" -> "/mathjax/assets")
@@ -30,7 +31,7 @@ class Plugin extends gitbucket.core.plugin.Plugin {
   }
 
   override def shutdown(registry: PluginRegistry, context: ServletContext, settings: SystemSettings): Unit = {
-    renderer.map(r => r.shutdown())
+    renderer.foreach(r => r.shutdown())
   }
 
 }
